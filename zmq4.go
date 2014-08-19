@@ -1,9 +1,8 @@
 package zmq4
 
 /*
-#cgo !windows pkg-config: libzmq
-#cgo windows CFLAGS: -I/usr/local/include
-#cgo windows LDFLAGS: -L/usr/local/lib -lzmq
+#cgo CFLAGS: -Izeromq-4.0.4/include
+#cgo LDFLAGS: -Lzeromq-4.0.4/src/.libs/ -lzmq
 #include <zmq.h>
 #include <zmq_utils.h>
 #include <stdlib.h>
